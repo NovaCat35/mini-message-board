@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+	<head>
+		<title><%= title %></title>
+		<link rel="stylesheet" href="/stylesheets/style.css" />
+	</head>
+	<body>
+		<h1><%= title %></h1>
+		<p>Welcome to <%= title %></p>
+		<main>
+			<% for(let i = 0; i < messages.length; i++) {%>
+			<li>User: <%= messages[i].user %></li>
+			<li>Text: <%= messages[i].text %></li>
+			<li>Date Added: <%= messages[i].added %></li><br/>
+			<% } %>
+
+      <h2>-- All Users --</h2>
+      <% for(const elem of messages) {%>
+        <li><%= elem.user %></li>
+      <% } %>
+
+      <a href="/new">Add User</a>
+		</main>
+	</body>
 </html>

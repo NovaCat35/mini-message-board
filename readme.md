@@ -1,8 +1,12 @@
 # Mini Message Board
+Whether you came to say hello or just post some gibberish, leave your mark on this small corner of the internet with this mini message board! 
 
+[This project is a WORK IN PROGRESS] ⚠️
 
+## Features 🎯
+ - Online posting 
 
-### Installation
+## Installation ⚙️
 ```
 express mini-message-board --view=ejs
 cd mini-message-board
